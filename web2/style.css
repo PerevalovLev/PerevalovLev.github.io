@@ -1,0 +1,118 @@
+body{
+  margin: 0;
+}
+
+header, footer{
+  background-color: aqua;
+  opacity: 0.5;
+  margin: 0;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+}
+
+footer{
+  bottom: 0;
+}
+
+header h2{
+  margin: auto;
+}
+
+#logo{
+  float:left;
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+#title{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+a img {
+  display: block;
+  width: 350px;
+  height: 150px;
+}
+label{
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+#table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid rgb(0, 130, 28);
+}
+
+#table thead th:nth-child(1) {
+  width: 30%;
+}
+
+#table thead th:nth-child(2) {
+  width: 20%;
+}
+
+#table thead th:nth-child(3) {
+  width: 15%;
+}
+
+#table thead th:nth-child(4) {
+  width: 35%;
+}
+
+#table th,
+#table td {
+  padding: 0.7rem;
+}
+
+#table th {
+  letter-spacing: 2px;
+}
+
+#table td {
+  letter-spacing: 1px;
+}
+
+#table thead,
+#table tfoot {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px black;
+}
+
+#table thead th,
+#table tfoot th {
+  font-size: 1rem;
+}
+
+#table thead th,
+#table thead td,
+#table tfoot th,
+#table tfoot td {
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  border: 3px solid rgb(0, 71, 11);
+}
+
+#table tbody td {
+  text-align: center;
+}
+#table tbody tr:nth-child(odd) {
+  background-color: #00ec37;
+}
+
+#table tbody tr:nth-child(even) {
+  background-color: #78ff8f;
+}
+
+#table caption {
+  padding: 0.7rem;
+  caption-side: bottom;
+  color: #666;
+  text-align: right;
+  letter-spacing: 1px;
+}
