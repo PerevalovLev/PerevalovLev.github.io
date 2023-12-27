@@ -1,0 +1,9 @@
+a img {
+  display: block;
+  width: 350px;
+  height: 150px;
+}
+label{
+  display: block;
+  margin-bottom: 1.5rem;
+}
