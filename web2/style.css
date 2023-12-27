@@ -3,8 +3,8 @@ body{
 }
 
 header, footer{
-  background-color: aqua;
-  opacity: 0.5;
+  background-color: #dfff00;
+  opacity: 0.6;
   margin: 0;
   height: 100px;
   padding: 10px;
