@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Homework_1</title>
+</head>
+<body>
+  <ul>
+    <li>Абсолютная гиперссылка <a href="http://www.kubsu.ru/">здесь.</a></li>
+    <li>Абсолютная гиперссылка с протоколом https <a href="https://www.kubsu.ru/">здесь</a></li>
+    <li>Ссылка-изображение<a href="https://www.kubsu.ru/"><img src="my_image_1.png" alt=""></a></li>
+    <li>Сокращенная ссылка на внутреннюю страницу <a href="/page1.html">здесь</a></li>
+    <li>Сокращенную ссылка на главную страницу<a href="/index.html">здесь</a></li>
+    <li>Ссылка на фрагмент текущей страницы <a href="#abc">здесь</a></li>
+    <li><a href="https://kubsu.ru/?product=1234&color=pink&size=m">ссылка с тремя параметрами кубгу</a></li>
+    <li> <a href="https://www.kubsu.ru/ru/abiturient/dogovor?id=omega-media-query-dummy">Ссылка с параметром id</a></li>
+    <li><a href="./page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+    <li><a href="./about/page2.html">Относительная на страницу в каталоге about</a></li>
+    <li><a href="./about/page2.html">Относительная на страницу в каталоге уровнем выше текущего;</a></li>
+    <li><a href="./about/level2/page3.html">Относительная ссылка на страницу в каталоге двумя уровнями выше;</a></li>
+    <li>контекстную (прямо <a href="page.html">здесь</a>) в тексте абзаца</li>
+    <li>ссылку на фрагмент страницы стороннего сайта <a href='https://ru.wikipedia.org/wiki/Картофель?#Популярные_сорта_картофеля'>здесь</a>;</li>
+    <li id="abc">ссылки из прямоугольных и круглых областей картинки (HTML-тег map).
+      <map name="AaA">
+        <area shape="poly" coords="0,0,0,150,150,150 " href="page1.html" alt=""/>
+        <area shape="circle" coords="275,75,75" href="./about/page2.html" alt=""/>
+      </map>
+      <img usemap="#AaA" src="350x150.png" alt="350 x 150 pic" /></li>
+    <li>Ссылка с пустым href <a href="">здесь</a></li>
+    <li>Cсылка без href <a>здесь</a>;</li>
+    <li>Ссылка, по которой запрещен переход поисковикам <a href="https://example.com/" rel="nofollow">здесь</a></li>
+    <li>запрещенную для индексации поисковиками <noindex><a href="https://example.com/">здесь</a></noindex> </li>
+    <li>нумерованный список ссылок с подписями title:
+      <ol>
+        <li>Ссылка на page1 <a href="/web1/page1.html" title="page1">здесь</a></li>
+        <li>Ссылка на page2 <a href="./about/page2.html" title="page2">здесь</a></li>
+        <li>Ссылка на page3 <a href="./about/level2/page3.html" title="page3">здесь</a></li>
+        </ol>
+    </li>
+    <li>ссылка на файл на сервере FTP с авторизацией;</li>
+  </ul>
+
+  <form action="bad" method="post">
+
+    <label for="name">Введите Ф.И.О.:<input id="name" type="text" name="name" placeholder="Иванов Иван Иванович" required/></label>
+    
+
+    <label for="phone">Введите номер телефона:<input id="phone" type="tel" name="name" placeholder="+78800535355" required/></label>
+    
+
+    <label for="email">Введите email:<input type="email" name="email" id="email" placeholder="example@gmail.ru" required></label>
+    
+
+    <label for="date">Введите дату рождения:<input type="date" name="date" id="date" required></label>
+
+    <label for="m">
+      <input type="radio" id="m" name="title" value="M." required>
+      Мужской
+    </label>
+    <input type="radio" name="title" value="Ms." required>
+      Женский
+    
+    <label for="multi">
+      Любимый язык программирования:
+      <select multiple name="multi" id="multi" required>
+        <option>Pascal</option>
+        <option>C</option>
+        <option>C++</option>
+        <option>JavaScript</option>
+        <option>PHP</option>
+        <option>Python</option>
+        <option>Java</option>
+        <option>Haskel</option>
+        <option>Clojure</option>
+        <option>Prolog</option>
+        <option>Scala</option>
+      </select>
+    </label>
+
+    <label for="message">
+      Ваша биография:
+      <textarea id="message" name="message" required
+       ></textarea>
+    </label>
+
+    <label for="checkbox">
+      С контрактом ознакомлен
+      <input id="checkbox" type="checkbox" name="checkbox" required>
+    </label> 
+    
+    <button type="submit">Сохранить</button>
+
+  </form>
+</body>
+</html>
